@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Machine Quotes</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="./index.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Freehand&display=swap');
+
+        #text {
+            font-family: 'Freehand', cursive;
+            font-size: 2rem;
+        }
+
+        body {
+            background-color: rgb(161, 135, 112);
+        }
+
+        .center {
+            margin: auto;
+            width: 50%;
+            border: 4px solid white;
+            padding: 10px;
+            margin: 0;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    </style>
+</head>
+<body>
+    <div class="container-fluid center">
+        <div class="row py-4"> 
+            <wrapper id="quote-box">
+                <div class="card">
+                    <div class="card-body">
+                    <blockquote class="blockquote mb-0">
+                        <div id="text"></div>
+                        <footer class="blockquote-footer"><cite title="Source Title"><div id="author"></div></cite></footer>
+                    </blockquote>
+                    <br>
+                    <button id="new-quote" class="btn btn-success" onclick="generateQuote();" >Nova citação</button>
+                <a href="twitter.com/intent/tweet" class="btn btn-primary" id="tweet-quote" target="_blank">Tweetar Citação</a>
+                    </div>
+                </div>
+            </wrapper>
+        </div> 
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+</html>

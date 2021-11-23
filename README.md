@@ -1,0 +1,1 @@
+## Gerador de citações feito com HTML, JavaScript e BootStrap
